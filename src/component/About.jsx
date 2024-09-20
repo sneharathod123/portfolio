@@ -9,7 +9,7 @@ function About() {
   return (
     <div className="about">
       <span className="title">
-        {/* <span className="bg-white  px-4 py-2"> About</span> */}
+        <span className="bg-white  px-4 py-2"> About</span>
       </span>
       <div className="overflow-hidden  py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
