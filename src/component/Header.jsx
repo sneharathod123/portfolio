@@ -6,14 +6,12 @@ const Header = () => {
   const [menu, openMenu] = useState(false);
   const [showMenu, setShowmenu] = useState(true);
   return (
-    <nav className="flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20">
-      <span
-        // className="text-xl font-bold tracking-wide"
-        className=" flex items-center text-xl focus:ring-2 focus:ring-red-400 focus:ring-offset-2 rounded-md px-5 py-2.5 text-sm font-semibold shadow-sm"
-      >
-        It's me <TbPointerOff />
-      </span>
-
+    <nav className="flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20 position-fixed w-full z-10 top-0">
+      <a href="#">
+        <span className=" flex items-center text-xl focus:ring-2  font-bolder hover:text-red-400">
+          It's me <TbPointerOff className="text-red-400" />
+        </span>
+      </a>
       <ul
         className={`${
           menu ? "block" : "hidden"
