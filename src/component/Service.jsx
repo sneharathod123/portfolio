@@ -24,13 +24,13 @@ function Service() {
               <img
                 src={require("../assets/shape-two-dark (1).png")}
                 alt="image"
-                className="absolute right-36 top-12 "
+                className="absolute right-36 top-12 max-[600px]:right-0"
               />
             </div>
             <div className="text-section lg:pl-16 lg:pt-20">
               {" "}
               <div className="lg:max-w-lg">
-                <h2 className=" font-semibold text-5xl text-white py-3">
+                <h2 className=" font-semibold text-5xl max-[600px]:text-3xl text-white py-3">
                   what <span className="text-red-400"> service </span> I provide
                   To My client In Here
                 </h2>
@@ -55,7 +55,9 @@ function Service() {
                         alt="Web Development Icon"
                         className=" bg-blue-400 rounded-full p-3"
                       />
-                      <h3>Web Development</h3>
+                      <h3 className="max-[600px]:text-sm">
+                        Front-End Development
+                      </h3>
                     </div>
                     <div className="flex items-center gap-2">
                       <img
@@ -63,7 +65,9 @@ function Service() {
                         alt="Web Development Icon"
                         className=" bg-blue-400 rounded-full p-3"
                       />
-                      <h3>Web Development</h3>
+                      <h3 className="max-[600px]:text-sm">
+                        Back-End Development
+                      </h3>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-4 mt-4">
@@ -73,7 +77,9 @@ function Service() {
                         alt="Web Development Icon"
                         className=" bg-blue-400 rounded-full p-4"
                       />
-                      <h3>Web Development</h3>
+                      <h3 className="max-[600px]:text-sm">
+                        API Development & Integration
+                      </h3>
                     </div>
                     <div className="flex items-center gap-2">
                       <img
@@ -81,7 +87,7 @@ function Service() {
                         alt="Web Development Icon"
                         className=" bg-blue-400 rounded-full p-3"
                       />
-                      <h3>Web Development</h3>
+                      <h3 className="max-[600px]:text-sm">Web Development</h3>
                     </div>
                   </div>
                 </div>

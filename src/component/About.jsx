@@ -5,10 +5,15 @@ import {
   FaLongArrowAltRight,
   FaTwitter,
 } from "react-icons/fa";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 function About() {
+  const [text] = useTypewriter({
+    words: ["Sneha", "WebDeveloper"],
+    loop: 3,
+  });
   return (
-    <div className="about">
+    <div id="about">
       <div className="overflow-hidden py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -18,10 +23,19 @@ function About() {
                   <span className="bg-white px-7 py-1 ">About</span>
                 </span>
                 <h2 className="text-base font-semibold leading-7 text-indigo-600 py-3">
-                  <span className="text-white text-6xl"> Hiii ,</span>
+                  <span className="text-white text-6xl max-[600px]:text-4xl">
+                    {" "}
+                    Hiii ,
+                  </span>
                   <br />
-                  <span className="text-white text-6xl"> I’m </span>
-                  <span className="text-red-400 text-6xl">Sneha</span>
+                  <span className="text-white text-6xl max-[600px]:text-4xl">
+                    {" "}
+                    I’m{" "}
+                  </span>
+                  <span className="text-red-400 text-6xl max-[600px]:text-4xl">
+                    {text}
+                  </span>
+                  <Cursor cursorColor="red" />
                 </h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-stone-200 sm:text-4xl py-3">
                   A better workflow
@@ -34,19 +48,27 @@ function About() {
                   </span>{" "}
                   Let's shake hands with me.
                 </p>
-                <button className="theme-button mt-8 flex items-center  gap-2 text-white bg-red-500 hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 rounded-md px-6 py-3 text-sm font-semibold shadow-sm">
-                  Hire me <FaLongArrowAltRight />
-                </button>
+                <a href="#Contact">
+                  <button className="theme-button mt-8 flex items-center  gap-2 text-white bg-red-500 hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 rounded-md px-6 py-3 text-sm font-semibold shadow-sm">
+                    Hire me <FaLongArrowAltRight />
+                  </button>
+                </a>
                 <div className="social-icon mt-6 text-xl text-gray-400">
                   <ul className="flex gap-4">
                     <li>
-                      <FaFacebookF />
+                      <a href="#">
+                        <FaFacebookF />
+                      </a>
                     </li>
                     <li>
-                      <FaTwitter />
+                      <a href="#">
+                        <FaTwitter />
+                      </a>
                     </li>
                     <li>
-                      <FaLinkedinIn />
+                      <a href="#">
+                        <FaLinkedinIn />
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -62,12 +84,12 @@ function About() {
               <img
                 src={require("../assets/shape-one-dark.png")}
                 alt="image"
-                className="absolute left-36 top-0"
+                className="absolute left-36 top-0 max-[600px]:left-60 "
               />
               <img
                 src={require("../assets/shape-two-dark.png")}
                 alt="image"
-                className="absolute right-36 top-0"
+                className="absolute right-36 max-[600px]:left-16  top-0"
               />
             </div>
           </div>

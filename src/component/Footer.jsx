@@ -1,53 +1,54 @@
 import React from "react";
+import behanceIcon from "../assets/social-behance.png";
+import instagramIcon from "../assets/social-instagram.png";
+import LinkedinIcon from "../assets/linkedinP.png";
+import footerGirl from "../assets/footer-bottom-girl.png";
+import footerShape from "../assets/footer-bottom-shape.png";
 
 function Footer() {
+  const socialLinks = [
+    { href: "#", imgSrc: behanceIcon, alt: "Behance" },
+    {
+      href: "https://wordpressriverthemes.com/HTML/itsme/index-dark.html#About",
+      imgSrc: LinkedinIcon,
+      alt: "LinkedIn",
+    },
+    { href: "#", imgSrc: instagramIcon, alt: "Instagram" },
+  ];
+
   return (
-    <div className="footer relative">
-      <div className="footer-contact text-center text-white leading-10">
-        <h1 className=" text-4xl font-bold">Stay Connected</h1>
-        <p className="text-gray-400 text-lg">Bangladesh</p>
-        <p className="text-xl">hello_niharik@gmail.com</p>
+    <div className="footer relative text-white">
+      <div className="footer-contact relative text-center leading-10 z-10">
+        <h1 className="text-4xl font-bold">Stay Connected</h1>
+        <p className="text-gray-400 text-lg">Gujarat</p>
+        <p className="text-xl">rathodsneha397@gmail.com</p>
         <p>(+778) 675-0765</p>
       </div>
-      <ul className="justify-center flex gap-2 text-center mt-10">
-        <li>
-          <a href="#">
-            <img
-              className="bg-white p-4 rounded-full"
-              src={require("../assets/social-behance.png")}
-              alt="img"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              className="bg-white p-4 rounded-full"
-              src={require("../assets/social-dribbble.png")}
-              alt="img"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              className="bg-white p-4 rounded-full"
-              src={require("../assets/social-instagram.png")}
-              alt="img"
-            />
-          </a>
-        </li>
+      <ul className="flex justify-center gap-4 mt-10 z-10 relative">
+        {socialLinks.map((link, index) => (
+          <li key={index}>
+            <a href={link.href} aria-label={link.alt}>
+              <img
+                className="bg-white p-1 rounded-full hover:shadow-lg w-12 h-12"
+                src={link.imgSrc}
+                alt={link.alt}
+              />
+            </a>
+          </li>
+        ))}
       </ul>
-      <img
-        src={require("../assets/footer-bottom-girl.png")}
-        className="absolute bottom-0 left-1/4"
-        alt=""
-      />
-      <img
-        src={require("../assets/footer-bottom-shape.png")}
-        alt="img"
-        className="mx-auto"
-      />
+      <div className="footer-image-section">
+        <img
+          src={footerGirl}
+          className="absolute bottom-0 right-2/3 w-44 max-[1000px]:w-1/4 z-0 "
+          alt="Illustration of a girl"
+        />
+        <img
+          src={footerShape}
+          className="mx-auto mt-5"
+          alt="Decorative shape at footer bottom"
+        />
+      </div>
     </div>
   );
 }

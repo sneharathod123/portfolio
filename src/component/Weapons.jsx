@@ -12,7 +12,7 @@ const WeaponImage = ({ src, alt, classes }) => (
 function Weapons() {
   return (
     <div className="Weapons">
-      <div className="overflow-hidden py-24 sm:py-32">
+      <div className="overflow-hidden py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
@@ -38,9 +38,10 @@ function Weapons() {
                 </a>
               </div>
             </div>
-
-            {/* Responsive weapon-image-section */}
-            <div className="weapon-image-section relative">
+            <div>
+              <img src={require("../assets/toolsR.png")} alt="img" />
+            </div>
+            {/* <div className="weapon-image-section relative">
               <WeaponImage
                 src="figma"
                 alt="Figma"
@@ -81,7 +82,7 @@ function Weapons() {
                 alt="Dribbble"
                 classes="p-3 sm:p-4 bottom-[-60px] sm:bottom-[-80px] right-1/4 transform -translate-x-1/2 ml-2 sm:ml-4"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

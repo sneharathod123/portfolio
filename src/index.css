@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   /* background-color: #3c3b5a; */
   background-color: #32324c;
@@ -70,10 +72,10 @@ body {
 }
 .success-counter::before {
   content: "";
-  height: 50%;
+  height: 100%;
   width: 1px;
   left: 0;
-  top: -10px;
+  top: 0px;
   position: absolute;
   background: #e8e8e8;
 }

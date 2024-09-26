@@ -4,6 +4,7 @@ import About from "./component/About";
 import Contact from "./component/Contact";
 import Education from "./component/Education";
 import Footer from "./component/Footer";
+import GotoTop from "./component/GotoTop";
 import Header from "./component/Header";
 import Service from "./component/Service";
 import Skill from "./component/Skill";
@@ -24,6 +25,7 @@ function App() {
       <Weapons />
       <Contact />
       <Footer />
+      <GotoTop />
     </>
   );
 }

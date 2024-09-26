@@ -22,9 +22,14 @@ const Header = () => {
             About
           </li>
         </a>
-        <a href="#Experience">
+        <a href="#Skills">
           <li className="text-md transition-all duration-300 p-1 md:p-0">
-            Experience
+            Skills
+          </li>
+        </a>
+        <a href="#Education">
+          <li className="text-md transition-all duration-300 p-1 md:p-0">
+            Education
           </li>
         </a>
         <a href="#Projects">
@@ -32,7 +37,7 @@ const Header = () => {
             Projects
           </li>
         </a>
-        <a href="#Footer">
+        <a href="#Contact">
           <li className="text-md transition-all duration-300 p-1 md:p-0">
             Contact
           </li>

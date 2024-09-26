@@ -9,9 +9,38 @@ function Works() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
   };
+
   return (
-    <div className="Works">
+    <div id="Projects">
       <div className="overflow-hidden py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -26,9 +55,8 @@ function Works() {
                 </h1>
                 <p className="text-white text-lg mt-10">
                   As a designer I have been working few years in this sector,
-                  and i have complted lot's of project{" "}
+                  and I have completed lot's of projects
                   <a href="#" className="text-red-400">
-                    {" "}
                     see here.
                   </a>
                 </p>
@@ -37,18 +65,19 @@ function Works() {
                 </a>
               </div>
             </div>
-            <div className="image-section  flex mt-10 ">
-              <span className="text-red-400 text-5xl"> 07 </span>
-              <h1 className="text-white text-xl ml-5">
-                Years Of
-                <br /> Experince
-              </h1>
-              <span className="text-red-400 text-5xl ml-5 success-counter">
+            <div className="image-section flex mt-10">
+              <span className="text-red-400 text-5xl max-[600px]:text-4xl">
                 07
               </span>
-              <h1 className="text-white text-xl ml-5">
-                Years Of <br />
-                Experince
+              <h1 className="text-white text-xl ml-5 max-[600px]:ml-0 ">
+                Years Of
+                <br /> Experience
+              </h1>
+              <span className="text-red-400 text-5xl ml-5 max-[600px]:ml-0 success-counter max-[600px]:text-4xl">
+                07
+              </span>
+              <h1 className="text-white text-xl ml-5 max-[600px]:ml-0">
+                Years Of <br /> Experience
               </h1>
             </div>
           </div>
@@ -57,28 +86,28 @@ function Works() {
               <img
                 className="rounded-lg"
                 src={require("../assets/portfolio1.png")}
-                alt="img"
+                alt="portfolio1"
               />
             </div>
             <div>
               <img
                 className="rounded-lg"
                 src={require("../assets/portfolio2.png")}
-                alt="img"
+                alt="portfolio2"
               />
             </div>
             <div>
               <img
                 className="rounded-lg"
                 src={require("../assets/portfolio1.png")}
-                alt="img"
+                alt="portfolio1"
               />
             </div>
             <div>
               <img
                 className="rounded-lg"
                 src={require("../assets/portfolio2.png")}
-                alt="img"
+                alt="portfolio2"
               />
             </div>
           </Slider>
