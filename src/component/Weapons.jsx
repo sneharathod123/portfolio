@@ -1,13 +1,13 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-const WeaponImage = ({ src, alt, classes }) => (
-  <img
-    className={`bg-white rounded-xl absolute ${classes}`}
-    src={require(`../assets/${src}.png`)}
-    alt={alt}
-  />
-);
+// const WeaponImage = ({ src, alt, classes }) => (
+//   <img
+//     className={`bg-white rounded-xl absolute ${classes}`}
+//     src={require(`../assets/${src}.png`)}
+//     alt={alt}
+//   />
+// );
 
 function Weapons() {
   return (
@@ -31,16 +31,69 @@ function Weapons() {
                   help ensure client satisfaction.
                 </p>
                 <a
-                  href="#"
+                  href="#Contact"
                   className="flex text-lg hover:text-red-400 text-white gap-3 mt-10"
                 >
                   Let's see My Work Process <FaLongArrowAltRight />
                 </a>
               </div>
             </div>
-            <div>
-              <img src={require("../assets/toolsR.png")} alt="img" />
+            <div className="relative flex justify-center items-center h-[500px] w-full">
+              <div className="absolute top-[12%] left-[60%] transform -translate-x-1/2 max-[600px]:left-[75%] max-[600px]:top-[23%]">
+                <img
+                  src={require("../assets/html.png")}
+                  alt="HTML"
+                  className="w-[100px] h-[100px] object-cover max-[600px]:w-[70px] max-[600px]:h-[70px]  "
+                />
+              </div>
+              <div className="absolute top-[50%] right-[10%] transform -translate-y-1/2 max-[600px]:right-[0]">
+                <img
+                  src={require("../assets/react.png")}
+                  alt="React"
+                  className="w-[100px] h-[100px] object-cover max-[600px]:w-[70px] max-[600px]:h-[70px]"
+                />
+              </div>
+
+              <div className="absolute bottom-[10%] right-[25%] max-[600px]:right-[14%] max-[600px]:bottom-[22%]">
+                <img
+                  src={require("../assets/nodejs.png")}
+                  alt="Node.js"
+                  className="w-[100px] h-[100px]  object-cover max-[600px]:w-[70px] max-[600px]:h-[70px]"
+                />
+              </div>
+
+              <div className="absolute bottom-[10%] left-[25%] max-[600px]:bottom-[23%]">
+                <img
+                  src={require("../assets/tailwind.png")}
+                  alt="Tailwind"
+                  className="w-[100px] h-[80px]  object-cover max-[600px]:w-[70px] max-[600px]:h-[70px]"
+                />
+              </div>
+
+              <div className="absolute top-[50%] left-[10%] transform -translate-y-1/2 max-[600px]:left-[5%]">
+                <img
+                  src={require("../assets/express-js.png")}
+                  alt="Express.js"
+                  className="w-[100px] h-[100px]  object-cover max-[600px]:w-[70px] max-[600px]:h-[70px]"
+                />
+              </div>
+              <div className="absolute top-[50%] left-[40%] transform -translate-y-1/2">
+                <img
+                  src={require("../assets/github.png")}
+                  alt="Express.js"
+                  className="w-[100px] h-[100px]  object-cover max-[600px]:w-[70px] max-[600px]:h-[70px]"
+                />
+              </div>
+
+              <div className="absolute top-[10%] left-[22%] max-[600px]:top-[22%] ">
+                <img
+                  src={require("../assets/redux.png")}
+                  alt="Redux"
+                  className="w-[100px] h-[100px]  object-cover max-[600px]:w-[70px] max-[600px]:h-[70px]"
+                />
+              </div>
             </div>
+
             {/* <div className="weapon-image-section relative">
               <WeaponImage
                 src="figma"

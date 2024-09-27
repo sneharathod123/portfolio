@@ -4,6 +4,8 @@ import instagramIcon from "../assets/social-instagram.png";
 import LinkedinIcon from "../assets/linkedinP.png";
 import footerGirl from "../assets/footer-bottom-girl.png";
 import footerShape from "../assets/footer-bottom-shape.png";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { CiFacebook } from "react-icons/ci";
 
 function Footer() {
   const socialLinks = [
@@ -24,8 +26,23 @@ function Footer() {
         <p className="text-xl">rathodsneha397@gmail.com</p>
         <p>(+778) 675-0765</p>
       </div>
-      <ul className="flex justify-center gap-4 mt-10 z-10 relative">
-        {socialLinks.map((link, index) => (
+      <ul className="flex justify-center gap-4 mt-7 z-10 relative text-3xl">
+        <li>
+          <a href="#">
+            <FaLinkedinIn />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <FaInstagram />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <CiFacebook />
+          </a>
+        </li>
+        {/* {socialLinks.map((link, index) => (
           <li key={index}>
             <a href={link.href} aria-label={link.alt}>
               <img
@@ -35,7 +52,7 @@ function Footer() {
               />
             </a>
           </li>
-        ))}
+        ))} */}
       </ul>
       <div className="footer-image-section">
         <img

@@ -2,7 +2,7 @@ import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Slider from "react-slick";
 
-function Works() {
+function Portfolio() {
   var settings = {
     dots: true,
     infinite: true,
@@ -55,17 +55,17 @@ function Works() {
                 </h1>
                 <p className="text-white text-lg mt-10">
                   As a designer I have been working few years in this sector,
-                  and I have completed lot's of projects
-                  <a href="#" className="text-red-400">
+                  and I have completed lot's of projects{" "}
+                  <a href="#Contact" className="text-red-400">
                     see here.
                   </a>
                 </p>
-                <a href="#" className="text-red-400 flex gap-3 mt-5">
+                <a href="#Contact" className="text-red-400 flex gap-3 mt-5">
                   Explore More <FaLongArrowAltRight />
                 </a>
               </div>
             </div>
-            <div className="image-section flex mt-10">
+            {/* <div className="image-section flex mt-10">
               <span className="text-red-400 text-5xl max-[600px]:text-4xl">
                 07
               </span>
@@ -79,7 +79,7 @@ function Works() {
               <h1 className="text-white text-xl ml-5 max-[600px]:ml-0">
                 Years Of <br /> Experience
               </h1>
-            </div>
+            </div> */}
           </div>
           <Slider {...settings} className="mt-10">
             <div>
@@ -117,4 +117,4 @@ function Works() {
   );
 }
 
-export default Works;
+export default Portfolio;

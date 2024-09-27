@@ -1,7 +1,54 @@
 import React from "react";
 import { TbPointerOff } from "react-icons/tb";
+import { toast } from "react-toastify";
 
 function Contact() {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "b7be108e-dfff-49a5-bdeb-7c674c1e4c34");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      // Clear the form fields after successful submission
+      event.target.reset();
+
+      toast.success("Form submitted successfully!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    } else {
+      toast.error("There was an issue submitting the form.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
+  };
+
   return (
     <div id="Contact">
       <div className="overflow-hidden py-12 sm:py-16">
@@ -15,24 +62,29 @@ function Contact() {
                 <h2 className="text-3xl leading-7 text-white py-3 leading-relaxed mt-10 max-[600px]:text-xl">
                   Estimate your project? Let me know here.
                 </h2>
-                <form>
+                <form onSubmit={onSubmit} className="text-white">
                   <input
                     type="text"
+                    name="name"
                     className="form w-full mt-10"
                     placeholder="Enter Your Name"
                   />
                   <input
                     type="text"
+                    name="email"
                     className="form w-full mt-10"
                     placeholder="Enter Your Email"
                   />
                   <div className="flex mt-10 ">
                     <input
                       type="text"
-                      className="form w-full "
+                      name="message"
+                      className="form w-full"
                       placeholder="Tell me about your project"
                     />
-                    <TbPointerOff className="text-red-400 " />
+                    <button type="submit" className="btn text-3xl ">
+                      <TbPointerOff className="text-red-400 " />
+                    </button>
                   </div>
                 </form>
               </div>

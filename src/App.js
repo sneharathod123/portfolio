@@ -6,11 +6,11 @@ import Education from "./component/Education";
 import Footer from "./component/Footer";
 import GotoTop from "./component/GotoTop";
 import Header from "./component/Header";
+import Portfolio from "./component/Portfolio";
 import Service from "./component/Service";
 import Skill from "./component/Skill";
 import Testimonial from "./component/Testimonial";
 import Weapons from "./component/Weapons";
-import Works from "./component/Works";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
       <Service />
       <Skill />
       <Education />
-      <Works />
+      <Portfolio />
       <Testimonial />
       <Weapons />
       <Contact />
