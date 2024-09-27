@@ -1,22 +1,22 @@
 import React from "react";
-import behanceIcon from "../assets/social-behance.png";
-import instagramIcon from "../assets/social-instagram.png";
-import LinkedinIcon from "../assets/linkedinP.png";
+// import behanceIcon from "../assets/social-behance.png";
+// import instagramIcon from "../assets/social-instagram.png";
+// import LinkedinIcon from "../assets/linkedinP.png";
 import footerGirl from "../assets/footer-bottom-girl.png";
 import footerShape from "../assets/footer-bottom-shape.png";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
 
 function Footer() {
-  const socialLinks = [
-    { href: "#", imgSrc: behanceIcon, alt: "Behance" },
-    {
-      href: "https://wordpressriverthemes.com/HTML/itsme/index-dark.html#About",
-      imgSrc: LinkedinIcon,
-      alt: "LinkedIn",
-    },
-    { href: "#", imgSrc: instagramIcon, alt: "Instagram" },
-  ];
+  // const socialLinks = [
+  //   { href: "#", imgSrc: behanceIcon, alt: "Behance" },
+  //   {
+  //     href: "https://wordpressriverthemes.com/HTML/itsme/index-dark.html#About",
+  //     imgSrc: LinkedinIcon,
+  //     alt: "LinkedIn",
+  //   },
+  //   { href: "#", imgSrc: instagramIcon, alt: "Instagram" },
+  // ];
 
   return (
     <div className="footer relative text-white">
@@ -59,6 +59,7 @@ function Footer() {
           src={footerGirl}
           className="absolute bottom-0 right-2/3 w-44 max-[1000px]:w-1/4 z-0 "
           alt="Illustration of a girl"
+          data-aos="fade-right"
         />
         <img
           src={footerShape}

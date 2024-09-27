@@ -27,8 +27,8 @@ function Weapons() {
                 </h1>
                 <p className="text-gray-400">
                   I love the software I use in my work because I'm very skilled
-                  with them. These are the main tools in my design career, which
-                  help ensure client satisfaction.
+                  with them. These are the main tools in my developing career,
+                  which help ensure client satisfaction.
                 </p>
                 <a
                   href="#Contact"

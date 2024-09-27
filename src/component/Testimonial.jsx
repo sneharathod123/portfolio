@@ -24,7 +24,7 @@ function Testimonial() {
                   <img
                     src={require("../assets/shape-two.png")}
                     alt="img"
-                    className="absolute right-0 top-0 w-32 sm:w-40 lg:w-52"
+                    className="absolute right-0 top-0 w-32 sm:w-40 lg:w-52   "
                     style={{
                       transform: "translate(30%, -30%)",
                     }}
@@ -36,7 +36,18 @@ function Testimonial() {
               <span className="title block mb-6">
                 <span className="bg-white px-7 py-1 ">Testimonial</span>
               </span>
-              <h1 className="text-4xl font-semibold text-white">
+              <h1 className="text-white text-xl mt-10">
+                "As an intern at{" "}
+                <span className="text-red-400"> BVM Infotech,</span> I gained
+                invaluable experience as a full-stack developer. I had the
+                opportunity to work on diverse projects that enhanced my skills
+                in both frontend and backend development. The collaborative
+                environment allowed me to learn from experienced professionals
+                while contributing to real-world applications. I am grateful for
+                the mentorship I received, which has prepared me for my future
+                career in tech."
+              </h1>
+              {/* <h1 className="text-4xl font-semibold text-white">
                 What my happy <span className="text-red-400"> client</span>{" "}
                 saying their services.
               </h1>
@@ -109,7 +120,7 @@ function Testimonial() {
                     </p>
                   </div>
                 </div>
-              </Slider>
+              </Slider> */}
             </div>
           </div>
         </div>

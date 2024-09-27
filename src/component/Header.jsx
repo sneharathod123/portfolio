@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { FaDownload } from "react-icons/fa";
 import { RiCloseLine, RiMenu2Line } from "react-icons/ri";
 import { TbPointerOff } from "react-icons/tb";
+import resume from "../assets/dummy.pdf";
 
 const Header = () => {
   const [menu, openMenu] = useState(false);
@@ -42,6 +44,11 @@ const Header = () => {
             Contact
           </li>
         </a>
+        <button className="theme-button bg-red-500 py-2 px-3.5 rounded-md  text-md">
+          <a href={resume} download="resume.pdf" className="flex  gap-2">
+            <FaDownload /> Resume
+          </a>
+        </button>
       </ul>
       {showMenu ? (
         <RiMenu2Line

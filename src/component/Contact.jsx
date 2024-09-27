@@ -68,12 +68,14 @@ function Contact() {
                     name="name"
                     className="form w-full mt-10"
                     placeholder="Enter Your Name"
+                    autoComplete="off"
                   />
                   <input
                     type="text"
                     name="email"
                     className="form w-full mt-10"
                     placeholder="Enter Your Email"
+                    autoComplete="off"
                   />
                   <div className="flex mt-10 ">
                     <input
@@ -81,6 +83,7 @@ function Contact() {
                       name="message"
                       className="form w-full"
                       placeholder="Tell me about your project"
+                      autoComplete="off"
                     />
                     <button type="submit" className="btn text-3xl ">
                       <TbPointerOff className="text-red-400 " />

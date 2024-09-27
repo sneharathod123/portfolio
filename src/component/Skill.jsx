@@ -23,18 +23,23 @@ function Skill() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div className="lg:pr-8 lg:pt-4">
-                <div className="lg:max-w-lg">
+                <div className="lg:max-w-lg" data-aos="fade-up">
                   <span className="title block mb-4">
                     <span className="bg-white px-7 py-1 ">Skill</span>
                   </span>
                   <p className="mt-2 text-3xl font-bold tracking-tight text-stone-200 sm:text-4xl py-3">
-                    As a Developer i am good at fit with few skills.
+                    As a Full Stack Developer, I offer a wide range of skills.
                   </p>
                   <p className="mt-6 text-lg leading-8 text-gray-400">
-                    All desigener have good skills to make sure satisfied their
-                    clints, As a Developer I am also specialised few{" "}
-                    <span className="text-red-400"> skills.</span>
+                    I specialize in both frontend and backend development,
+                    delivering
+                    <span className="text-red-400">
+                      {" "}
+                      dynamic web applications
+                    </span>{" "}
+                    that meet client needs and enhance their digital presence.
                   </p>
+
                   <div className="progress-text text-white flex justify-between">
                     <h4>HTML</h4>
                     <h4>{progressThree}%</h4>
@@ -94,7 +99,7 @@ function Skill() {
                   </div>
                 </div>
               </div>
-              <div className="image-section relative">
+              <div className="image-section relative" data-aos="fade-up">
                 <img
                   alt="Product screenshot"
                   src={require("../assets/skills-dark.png")}
@@ -104,12 +109,12 @@ function Skill() {
                 <img
                   src={require("../assets/shape-one-dark.png")}
                   alt="image"
-                  className="absolute left-36 top-0"
+                  className="absolute left-36 top-0 max-[600px]:left-12"
                 />
                 <img
                   src={require("../assets/shape-two-dark.png")}
                   alt="image"
-                  className="absolute right-36 top-0"
+                  className="absolute right-36 top-0 max-[600px]:right-8"
                 />
               </div>
             </div>

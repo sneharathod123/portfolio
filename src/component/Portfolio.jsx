@@ -43,7 +43,10 @@ function Portfolio() {
     <div id="Projects">
       <div className="overflow-hidden py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div
+            className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+            data-aos="fade-up"
+          >
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <span className="title block mb-4">
@@ -54,8 +57,8 @@ function Portfolio() {
                   <span className="text-red-400 "> Works.</span>
                 </h1>
                 <p className="text-white text-lg mt-10">
-                  As a designer I have been working few years in this sector,
-                  and I have completed lot's of projects{" "}
+                  As a Developer I have been working few years in this sector,
+                  and I have created some projects{" "}
                   <a href="#Contact" className="text-red-400">
                     see here.
                   </a>

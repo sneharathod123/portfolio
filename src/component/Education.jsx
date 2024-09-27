@@ -7,7 +7,7 @@ function Education() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
-              <div className="lg:max-w-lg">
+              <div className="lg:max-w-lg" data-aos="fade-up">
                 <span className="title block mb-4">
                   <span className="bg-white px-7 py-1 ">Qualification</span>
                 </span>
@@ -63,7 +63,7 @@ function Education() {
                 </div> */}
               </div>
             </div>
-            <div className="lg:pr-8 lg:pt-4">
+            <div className="lg:pr-8 lg:pt-4" data-aos="fade-up">
               <div className="lg:max-w-lg">
                 <span className="title block mb-4">
                   <span className="bg-white px-7 py-1 ">Experiecne</span>

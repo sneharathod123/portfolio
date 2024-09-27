@@ -6,7 +6,7 @@ function Service() {
       <div className="overflow-hidden py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl  gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div className="image-section relative lg:mb-16">
+            <div className="image-section relative lg:mb-16" data-aos="fade-up">
               <span className="title block mb-4">
                 <span className="bg-white px-7 py-1 ">Service</span>
               </span>
@@ -27,25 +27,23 @@ function Service() {
                 className="absolute right-36 top-12 max-[600px]:right-0"
               />
             </div>
-            <div className="text-section lg:pl-16 lg:pt-20">
+            <div className="text-section lg:pl-16 lg:pt-20" data-aos="fade-up">
               {" "}
               <div className="lg:max-w-lg">
                 <h2 className=" font-semibold text-5xl max-[600px]:text-3xl text-white py-3">
-                  what <span className="text-red-400"> service </span> I provide
-                  To My client In Here
+                  The <span className="text-red-400">Services</span> I Offer
                 </h2>
                 <p className="mt-2 text-lg  tracking-tight text-stone-200  py-3">
-                  I always want to be able to meet the goals of my clients, I
-                  value my services as a Developer through my work. You may like
-                  my <span className="text-red-400"> services.</span>
+                  I am committed to delivering customized web solutions that
+                  meet your goals. My focus is on creating high-quality
+                  applications that enhance your brand's digital presence.
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-400">
-                  Hey are you looking for a Developer to build your{" "}
+                  Looking for a developer to elevate your business?
                   <span className="text-red-400">
                     {" "}
-                    Brand and grow your business?
-                  </span>{" "}
-                  Let's shake hands with me.
+                    Let’s collaborate to turn your vision into reality!
+                  </span>
                 </p>
                 <div className="services-provide mt-8 text-white text-lg">
                   <div className="grid grid-cols-2 gap-4">

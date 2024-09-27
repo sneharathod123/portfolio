@@ -74,7 +74,7 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="image-section relative">
+            <div className="image-section relative" data-aos="fade-up">
               <img
                 alt="Product screenshot"
                 src={require("../assets/about-dark.png")}
